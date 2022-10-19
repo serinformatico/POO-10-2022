@@ -1,8 +1,8 @@
 package clase_01;
 
-public class SolucionConsignaDeMesaC01 {
+public class SolucionConsignaDeMesaC02 {
     public static void main(String[] args) {
-        /* Ejercicio 1:
+        /* Ejercicio 2:
             Para representar cada una de las características de las mascotas, crear una variable y darle
             el valor correspondiente en el IDE IntelliJ. No olvidar darle el tipo adecuado a lo que
             queremos que contenga. Por cada mascota de la veterinaria que figura en la siguiente
