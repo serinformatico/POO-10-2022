@@ -32,13 +32,11 @@ public class SolucionEjercicioGuiadoC02 {
         System.out.println("Ingresa dos dígitos para el año de tu fecha de nacimiento");
         int anioDeFechaDeNacimiento = scanner.nextInt();
 
-        char inicialNombre   = nombre.charAt(0);
-        char inicialApellido = apellido.charAt(0);
+        String iniciales = String.valueOf(nombre.charAt(0)) + String.valueOf(apellido.charAt(0));
 
-
-        System.out.println("\nFICHA PERSONAL");
+        System.out.println("\n ****** FICHA PERSONAL ******");
         System.out.println("Nombre completo: " + nombre + " " + apellido);
-        System.out.println("Iniciales: " + inicialNombre + inicialApellido);
+        System.out.println("Iniciales: " + iniciales);
         System.out.println("Fecha de nacimiento: " + obtenerFechaDeNacimiento(diaDeFechaDeNacimiento, mesDeFechaDeNacimiento, anioDeFechaDeNacimiento));
     }
 
