@@ -1,6 +1,6 @@
 package clase_01;
 
-public class SolucionConsignaDeMesaC02 {
+public class SolucionConsignaDeMesaC01 {
     public static void main(String[] args) {
         /* Ejercicio 2:
             Para representar cada una de las características de las mascotas, crear una variable y darle
