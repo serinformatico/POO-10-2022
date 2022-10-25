@@ -1,4 +1,4 @@
-package material_dh.clase_02;
+package clase_02.actividad_de_mesa;
 
 import java.util.Scanner;
 

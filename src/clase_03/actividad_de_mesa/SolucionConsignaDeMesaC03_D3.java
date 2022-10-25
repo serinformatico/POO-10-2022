@@ -1,4 +1,4 @@
-package clase_03;
+package clase_03.actividad_de_mesa;
 
 import java.util.Scanner;
 

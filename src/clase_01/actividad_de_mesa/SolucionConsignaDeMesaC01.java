@@ -1,4 +1,4 @@
-package clase_01;
+package clase_01.actividad_de_mesa;
 
 public class SolucionConsignaDeMesaC01 {
     public static void main(String[] args) {
