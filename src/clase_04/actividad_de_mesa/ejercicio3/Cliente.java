@@ -1,4 +1,4 @@
-package clase_04.actividad_de_mesa;
+package clase_04.actividad_de_mesa.ejercicio3;
 
 public class Cliente {
 

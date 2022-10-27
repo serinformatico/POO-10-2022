@@ -1,4 +1,4 @@
-package clase_04.actividad_de_mesa;
+package clase_04.actividad_de_mesa.ejercicio3;
 
 public class Mascota {
 
@@ -17,5 +17,19 @@ public class Mascota {
         this.nombre      = nombre;
         this.especie     = especie;
         this.raza        = raza;
+    }
+
+    public void pesar(double peso) {
+        this.peso = peso;
+    }
+
+    public void medir(double altura, double largo, double ancho) {
+        this.altura = altura;
+        this.largo  = largo;
+        this.ancho  = ancho;
+    }
+
+    public void diagnosticar(String estado) {
+        this.estadoGeneral = estado;
     }
 }

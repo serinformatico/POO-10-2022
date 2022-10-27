@@ -2,19 +2,15 @@ package clase_05.ppt;
 
 public class Coche {
 
-    // Atributos o propiedades
+    // Atributos públicos
     public String marca;
     public String modelo;
     public String color;
-    public Integer anio;
-    public Double precio;
+    public int anio;
+    public double precio;
 
 
-    // Constructor por defecto
-    public Coche () { }
-
-
-    // Métodos o comportamientos públicos
+    // Métodos públicos
     public void encender() {
         // Lógica
     }
