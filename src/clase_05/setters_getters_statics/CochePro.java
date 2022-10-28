@@ -49,7 +49,7 @@ public class CochePro {
 
 
     // Método privado
-    private double calcularMargen(double costo, double margenPorcentual) {
+    private Double calcularMargen(double costo, double margenPorcentual) {
         return ((costo / 100) * margenPorcentual);
     }
 

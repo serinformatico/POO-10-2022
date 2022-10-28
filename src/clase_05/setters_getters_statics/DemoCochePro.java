@@ -13,6 +13,10 @@ public class DemoCochePro {
         contener la palabra “get”. Un Setter es un método que se emplea para asignar un valor a un atributo
         y en su nombre debe contener la palabra “set”. Cada atributo puede tener un método “getter”
         o un “setter” o ambos. Siempre se declaran como públicos.
+
+        El método nextLine() de Scanner puede capturar oraciones a diferencia del método next()
+        que solo captura la primera palabra de una oración. Esto se debe a que next() usa por
+        defecto un delimitador que es el espacio. El delimitador se puede cambiar si fuese necesario.
     */
 
     public static void main(String[] args) {
