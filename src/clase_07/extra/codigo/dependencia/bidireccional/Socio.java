@@ -3,13 +3,13 @@ package clase_07.extra.codigo.dependencia.bidireccional;
 public class Socio {
 
     // Atributos privados
-    private String marca;
-    private String modelo;
+    private String nombre;
+    private String apellido;
 
     // Constructor
-    public Socio(String marca, String modelo) {
-        this.marca  = marca;
-        this.modelo = modelo;
+    public Socio(String nombre, String apellido) {
+        this.nombre   = nombre;
+        this.apellido = apellido;
     }
 
     // Método necesario para la relación de dependencia
@@ -19,20 +19,20 @@ public class Socio {
     }
 
     // Getters
-    public String getMarca() {
-        return this.marca;
+    public String getNombre() {
+        return this.nombre;
     }
 
-    public String getModelo() {
-        return this.modelo;
+    public String getApellido() {
+        return this.apellido;
     }
 
      // Setters
-    public void setMarca(String marca) {
-        this.marca = marca;
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
     }
 
-    public void setModelo(String modelo) {
-        this.modelo = modelo;
+    public void setApellido(String apellido) {
+        this.apellido = apellido;
     }
 }

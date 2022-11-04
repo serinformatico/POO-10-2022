@@ -1,6 +1,7 @@
 package clase_08.extra.codigo;
 
-import java.util.Date;
+import java.time.LocalDate;
+import java.time.Period;
 
 public class Persona {
 
@@ -14,19 +15,19 @@ public class Persona {
         this.apellido = apellido;
     }
 
+    // Método público
+    public int calcularEdad(LocalDate fechaDeNacimiento) {
+        LocalDate fechaActual = LocalDate.now();
+        return Period.between(fechaDeNacimiento, fechaActual).getYears();
+    }
+
     // Getters
     public String getNombre() {
-        return nombre;
+        return this.nombre;
     }
 
     public String getApellido() {
-        return apellido;
-    }
-
-    // Método público
-    public int calcularEdad(Date fechaDeNacimiento) {
-        // Lógica
-        return 0;
+        return this.apellido;
     }
 
     // Setters

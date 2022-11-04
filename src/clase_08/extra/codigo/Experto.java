@@ -1,24 +1,24 @@
 package clase_08.extra.codigo;
 
-public class Experto extends Profesor {
+import clase_09.calefaccion.codigo.Estufa;
+import clase_09.calefaccion.codigo.ViviendaCasa;
+
+public class Experto {
 
     // Atributos privados
     private String temario;
 
     // Constructor
-    public Experto(String nombre, String apellido, String materia, String temario) {
-        super(nombre, apellido, materia);
-        this.temario = temario;
-    }
+
 
     // Método público
-    public void dictarClase(Clase clase) {
+    public void dictarClase(Estufa estufa) {
         // Lógica
     }
 
     // Getter
     public String getTemario() {
-        return temario;
+        return this.temario;
     }
 
     // Setter

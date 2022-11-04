@@ -1,11 +1,11 @@
 package clase_08.extra.codigo;
 
-public class Ayudante extends Profesor {
+import clase_09.calefaccion.codigo.ViviendaCasa;
+
+public class Ayudante {
 
     // Constructor
-    public Ayudante(String nombre, String apellido, String materia) {
-        super(nombre, apellido, materia);
-    }
+
 
     // Método público
     public void tomarAsistencia() {

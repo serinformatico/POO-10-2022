@@ -8,7 +8,6 @@ public class Automovil {
     private Motor motor; // Atributo necesario para la relación de composición
 
     // Constructor
-
     public Automovil(String marca, String modelo) {
         this.marca  = marca;
         this.modelo = modelo;
@@ -37,7 +36,4 @@ public class Automovil {
         this.modelo = modelo;
     }
 
-    public void setMotor(Motor motor) {
-        this.motor = motor;
-    }
 }

@@ -3,36 +3,36 @@ package clase_07.extra.codigo.dependencia.direccional;
 public class Socio {
 
     // Atributos privados
-    private String marca;
-    private String modelo;
+    private String nombre;
+    private String apellido;
 
     // Constructor
-    public Socio(String marca, String modelo) {
-        this.marca  = marca;
-        this.modelo = modelo;
+    public Socio(String nombre, String apellido) {
+        this.nombre   = nombre;
+        this.apellido = apellido;
     }
 
     // Método necesario para la relación de dependencia
     public void leerLibro(Libro[] libros) {
         // Lógica;
-        System.out.println("Mi primer libro para leer " + libros[0].getTitulo());
+        System.out.println(this.nombre + ", mi primer libro para leer es " + libros[0].getTitulo());
     }
 
     // Getters
-    public String getMarca() {
-        return this.marca;
+    public String getNombre() {
+        return this.nombre;
     }
 
-    public String getModelo() {
-        return this.modelo;
+    public String getApellido() {
+        return this.apellido;
     }
 
      // Setters
-    public void setMarca(String marca) {
-        this.marca = marca;
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
     }
 
-    public void setModelo(String modelo) {
-        this.modelo = modelo;
+    public void setApellido(String apellido) {
+        this.apellido = apellido;
     }
 }

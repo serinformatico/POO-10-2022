@@ -1,15 +1,14 @@
 package clase_08.extra.codigo;
 
-public class Profesor extends Persona {
+import clase_09.calefaccion.codigo.Vivienda;
+
+public class Profesor {
 
     // Atributos privados
-    private String materia;
+    protected String materia;
 
     // Constructor
-    public Profesor(String nombre, String apellido, String materia) {
-        super(nombre, apellido);
-        this.materia = materia;
-    }
+
 
     // Método público
     public void proponerTema(String tema) {
@@ -17,12 +16,12 @@ public class Profesor extends Persona {
     }
 
     // Getter
-    public String getTemario() {
-        return materia;
+    public String getMateria() {
+        return this.materia;
     }
 
     // Setter
-    public void setTemario(String temario) {
+    public void setMateria(String temario) {
         this.materia = temario;
     }
 }

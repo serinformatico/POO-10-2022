@@ -8,7 +8,6 @@ public class Automovil {
     private Airbag[] airbags; // Atributo necesario para la relación de agregación
 
     // Constructor
-
     public Automovil(String marca, String modelo, Airbag[] airbags) {
         this.marca   = marca;
         this.modelo  = modelo;

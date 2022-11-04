@@ -7,24 +7,24 @@ public class Estudiante extends Persona {
     private double promedioFinal;
 
     // Constructor
-    public Estudiante(String nombre, String apellido, String carrera) {
+    public Estudiante(String nombre, String apellido, String carrera, double promedioFinal) {
         super(nombre, apellido);
-        this.carrera       = carrera;
-        this.promedioFinal = 0.0;
+        this.carrera = carrera;
+        this.promedioFinal = promedioFinal;
     }
 
     // Método público
-    public void tomarClase(Clase clase) {
+    public void tomarClase(Clase Clase) {
         // Lógica
     }
 
     // Getters
     public String getCarrera() {
-        return carrera;
+        return this.carrera;
     }
 
     public double getPromedioFinal() {
-        return promedioFinal;
+        return this.promedioFinal;
     }
 
     // Setters
