@@ -1,8 +1,8 @@
-package clase_11.actividad_de_mesa.codigo;
+package clase_12.actividad_de_mesa.codigo;
 
 import java.util.Objects;
 
-public class CuentaCorriente extends Cuenta{
+public class CuentaCorriente extends Cuenta {
 
     // Atributo privado
     private double montoAutorizadoDeGiro;
@@ -53,7 +53,7 @@ public class CuentaCorriente extends Cuenta{
     // Método sobrescrito
     @Override
     public String toString() {
-        return "Caja Corriente: " + super.toString() + ", monto autorizado de giro=" + montoAutorizadoDeGiro;
+        return "Cuenta Corriente: " + super.toString() + ", monto autorizado de giro=" + montoAutorizadoDeGiro;
     }
 
 

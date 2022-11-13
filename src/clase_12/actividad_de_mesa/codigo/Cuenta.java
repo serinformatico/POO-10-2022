@@ -1,4 +1,4 @@
-package clase_11.actividad_de_mesa.codigo;
+package clase_12.actividad_de_mesa.codigo;
 
 public abstract class Cuenta {
 
