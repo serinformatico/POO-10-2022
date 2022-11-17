@@ -1,4 +1,4 @@
-package clase_05.actividad_de_mesa;
+package clase_05.actividad_de_mesa.codigo;
 
 public class UsuarioJuego {
 

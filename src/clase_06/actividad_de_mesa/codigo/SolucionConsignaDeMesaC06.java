@@ -1,6 +1,4 @@
-package clase_06.actividad_de_mesa;
-
-import clase_05.actividad_de_mesa.UsuarioJuego;
+package clase_06.actividad_de_mesa.codigo;
 
 import java.util.Scanner;
 

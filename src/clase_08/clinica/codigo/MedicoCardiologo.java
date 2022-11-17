@@ -9,6 +9,9 @@ public class MedicoCardiologo extends Medico {
 
     // Método y parámetro necesario para la relación de dependencia o uso
     public void realizarEstudio(Estudio[] estudios) {
-        // Lógica
+        System.out.println("Estudio realizados: ");
+        for (Estudio estudio : estudios) {
+            System.out.println("    " + estudio.getNombre());
+        }
     }
 }

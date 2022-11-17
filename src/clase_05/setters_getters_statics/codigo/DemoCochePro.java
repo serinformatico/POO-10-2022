@@ -1,4 +1,4 @@
-package clase_05.setters_getters_statics;
+package clase_05.setters_getters_statics.codigo;
 
 public class DemoCochePro {
 

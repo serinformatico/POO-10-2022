@@ -1,4 +1,4 @@
-package clase_05.ppt;
+package clase_05.ppt.codigo;
 
 public class Coche {
 

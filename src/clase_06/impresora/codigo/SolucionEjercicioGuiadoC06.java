@@ -1,4 +1,4 @@
-package clase_06.impresora;
+package clase_06.impresora.codigo;
 
 import java.util.Date;
 

@@ -2,7 +2,7 @@ package clase_09.calefaccion.codigo;
 
 public class Ciudad {
 
-    // Atributos protegidos
+    // Atributos privados
     private String nombre;
     private Vivienda[] viviendas;
 

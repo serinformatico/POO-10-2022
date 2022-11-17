@@ -1,4 +1,4 @@
-package clase_06.actividad_de_mesa;
+package clase_06.actividad_de_mesa.codigo;
 
 import java.time.LocalDateTime;
 

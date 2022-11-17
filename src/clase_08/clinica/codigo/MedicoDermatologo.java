@@ -9,7 +9,9 @@ public class MedicoDermatologo extends Medico {
 
     // Método y parámetro necesario para la relación de dependencia o uso
     public void recetarMedicamento(Medicamento[] medicamentos) {
-        System.out.println("Medicamento: " + medicamentos[0].getNombre());
-        // Lógica
+        System.out.println("Medicamentos recetados: ");
+        for (Medicamento medicamento : medicamentos) {
+            System.out.println("    " + medicamento.getNombre());
+        }
     }
 }
