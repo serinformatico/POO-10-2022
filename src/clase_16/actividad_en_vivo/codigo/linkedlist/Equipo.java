@@ -20,7 +20,9 @@ public class Equipo {
 
     public void mostrarJugadoresTitulares() {
         for (Jugador jugador: jugadores) {
-            System.out.println(jugador.toString());
+            if (jugador.getEsTitular()) {
+                System.out.println(jugador.toString());
+            }
         }
     }
 
@@ -28,7 +30,7 @@ public class Equipo {
         int cantidadDeLesionados = 0;
 
         for (Jugador jugador: jugadores) {
-            if (jugador.getEstaLesionado()) {
+            if (jugador.getEstaLesionado() && jugador.getEsTitular()) {
                 cantidadDeLesionados++;
             }
         }
