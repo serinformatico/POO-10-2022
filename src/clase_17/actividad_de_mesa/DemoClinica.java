@@ -1,6 +1,6 @@
 package clase_17.actividad_de_mesa;
 
-import java.util.Date;
+import java.time.LocalDate;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
@@ -19,10 +19,10 @@ public class DemoClinica {
             System.out.println("    Ingresa el mes");
             int mesDeLaFechaDeInternacion  = scanner.nextInt();
 
-            System.out.println("    Ingresa el año");
+            System.out.println("    Ingresa el año ####");
             int anioDeLaFechaDeInternacion = scanner.nextInt();
 
-            Date fechaDeInternacion = new Date(diaDeLaFechaDeInternacion + mesDeLaFechaDeInternacion + anioDeLaFechaDeInternacion);
+            LocalDate fechaDeInternacion = LocalDate.of(anioDeLaFechaDeInternacion, mesDeLaFechaDeInternacion, diaDeLaFechaDeInternacion);
             paciente.internar(fechaDeInternacion);
 
 
@@ -36,7 +36,7 @@ public class DemoClinica {
             System.out.println("    Ingresa el año");
             int anioDeLaFechaDeAlta = scanner.nextInt();
 
-            Date fechaDeAlta = new Date(diaDeLaFechaDeAlta + mesDeLaFechaDeAlta + anioDeLaFechaDeAlta);
+            LocalDate fechaDeAlta = LocalDate.of(anioDeLaFechaDeAlta, mesDeLaFechaDeAlta, diaDeLaFechaDeAlta);
             paciente.darDeAlta(fechaDeAlta);
 
         } catch (FechaException e) {

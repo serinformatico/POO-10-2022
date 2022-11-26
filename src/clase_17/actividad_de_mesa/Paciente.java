@@ -1,6 +1,6 @@
 package clase_17.actividad_de_mesa;
 
-import java.util.Date;
+import java.time.LocalDate;
 
 public class Paciente {
 
@@ -8,8 +8,8 @@ public class Paciente {
     String nombre;
     String apellido;
     String historiaClinica;
-    Date fechaDeInternacion;
-    Date fechaDeAlta;
+    LocalDate fechaDeInternacion;
+    LocalDate fechaDeAlta;
 
     // Constructor
     public Paciente(String nombre, String apellido, String historiaClinica) {
@@ -18,21 +18,22 @@ public class Paciente {
         this.historiaClinica    = historiaClinica;
     }
 
-    public void internar(Date fechaDeInternacion) throws FechaException {
-        if (fechaDeInternacion.after(new Date())) {
-            this.fechaDeInternacion = fechaDeInternacion;
-            System.out.println("Se ha realizado correctamente la internación (" + fechaDeAlta.getDay() + "-" + fechaDeAlta.getMonth() + "-" + fechaDeAlta.getYear() + ")");
-        } else {
+    public void internar(LocalDate fechaDeInternacion) throws FechaException {
+        if (!fechaDeInternacion.equals(LocalDate.now())) {
             throw new FechaException("No se puede realizar la internación");
         }
+
+        this.fechaDeInternacion = fechaDeInternacion;
+        System.out.println("Se ha realizado correctamente la internación (" + fechaDeInternacion.getDayOfMonth() + "-" + fechaDeInternacion.getMonthValue() + "-" + fechaDeInternacion.getYear() + ")");
     }
 
-    public void darDeAlta(Date fechaDeAlta) throws FechaException {
-        if (this.fechaDeInternacion.before(fechaDeAlta)) {
-            System.out.println("Se ha generado correctamente el alta (" + fechaDeAlta.getDay() + "-" + fechaDeAlta.getMonth() + "-" + fechaDeAlta.getYear() + ")");
-        } else {
+    public void darDeAlta(LocalDate fechaDeAlta) throws FechaException {
+        if (fechaDeAlta.isBefore(this.fechaDeInternacion)) {
             throw new FechaException("No se puede generar el alta");
         }
+
+        this.fechaDeAlta = fechaDeAlta;
+        System.out.println("Se ha generado correctamente el alta (" + fechaDeAlta.getDayOfMonth() + "-" + fechaDeAlta.getMonthValue() + "-" + fechaDeAlta.getYear() + ")");
     }
 
     // Getters
@@ -48,11 +49,11 @@ public class Paciente {
         return historiaClinica;
     }
 
-    public Date getFechaDeInternacion() {
+    public LocalDate getFechaDeInternacion() {
         return fechaDeInternacion;
     }
 
-    public Date getFechaDeAlta() {
+    public LocalDate getFechaDeAlta() {
         return fechaDeAlta;
     }
 
@@ -69,11 +70,11 @@ public class Paciente {
         this.historiaClinica = historiaClinica;
     }
 
-    public void setFechaDeInternacion(Date fechaDeInternacion) {
+    public void setFechaDeInternacion(LocalDate fechaDeInternacion) {
         this.fechaDeInternacion = fechaDeInternacion;
     }
 
-    public void setFechaDeAlta(Date fechaDeAlta) {
+    public void setFechaDeAlta(LocalDate fechaDeAlta) {
         this.fechaDeAlta = fechaDeAlta;
     }
 }
