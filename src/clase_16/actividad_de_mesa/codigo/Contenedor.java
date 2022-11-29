@@ -1,8 +1,9 @@
 package clase_16.actividad_de_mesa.codigo;
 
+import java.util.ArrayList;
 import java.util.Comparator;
 
-public class Contenedor implements Comparable<Contenedor>, Comparator<Contenedor> {
+public class Contenedor implements Comparable<Contenedor> {
 
     // Atributos privados
     private int id;
@@ -54,10 +55,7 @@ public class Contenedor implements Comparable<Contenedor>, Comparator<Contenedor
         return 0;
     }
 
-    @Override
-    public int compare(Contenedor x, Contenedor y) {
-        return x.compareTo(y);
-    }
+
 
     @Override
     public String toString() {

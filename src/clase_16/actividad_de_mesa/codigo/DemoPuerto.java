@@ -21,5 +21,10 @@ public class DemoPuerto {
         System.out.println("\nCONTENEDORES ORDENADOS");
         Collections.sort(puerto.getContenedores());
         puerto.mostrarContenedores();
+
+        // Las collection tienen un método foreach
+        System.out.println("\nCONTENEDORES ORDENADOS (forEach + lambda function)");
+        puerto.getContenedores().forEach( (contenedor) -> System.out.println(contenedor.toString() ));
+
     }
 }

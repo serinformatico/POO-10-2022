@@ -1,7 +1,5 @@
 package clase_16.actividad_de_mesa.codigo;
 
-import clase_16.actividad_en_vivo.codigo.Jugador;
-
 import java.util.ArrayList;
 
 public class Puerto {
@@ -9,7 +7,6 @@ public class Puerto {
     // Atributo privado
     private ArrayList<Contenedor> contenedores = new ArrayList();
 
-    // Constructor
     public void permitirEntradaDeContenedor(Contenedor contenedor) {
         this.contenedores.add(contenedor);
     }
