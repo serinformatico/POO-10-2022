@@ -1,8 +1,8 @@
-package clase_22.extra.composite;
+package clase_20_es_22.extra.composite;
 
-import clase_22.extra.composite.componentes.Circulo;
-import clase_22.extra.composite.componentes.Linea;
-import clase_22.extra.composite.componentes.Triangulo;
+import clase_20_es_22.extra.composite.componentes.Circulo;
+import clase_20_es_22.extra.composite.componentes.Linea;
+import clase_20_es_22.extra.composite.componentes.Triangulo;
 
 public class DemoComposite {
     public static void main(String[] args) {

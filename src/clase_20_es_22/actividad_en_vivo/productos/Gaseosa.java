@@ -1,9 +1,9 @@
-package clase_22.actividad_en_vivo.productos;
+package clase_20_es_22.actividad_en_vivo.productos;
 
-public class PapaFrita extends Producto {
+public class Gaseosa extends Producto {
 
     // Constructor
-    public PapaFrita(String nombre, double costo) {
+    public Gaseosa(String nombre, double costo) {
         super(nombre, costo);
     }
 

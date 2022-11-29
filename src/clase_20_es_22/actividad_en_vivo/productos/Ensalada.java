@@ -1,4 +1,4 @@
-package clase_22.actividad_en_vivo.productos;
+package clase_20_es_22.actividad_en_vivo.productos;
 
 public class Ensalada extends Producto {
 

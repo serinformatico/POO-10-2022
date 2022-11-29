@@ -1,10 +1,8 @@
-package clase_22.actividad_en_vivo;
+package clase_20_es_22.actividad_en_vivo;
 
-import clase_22.actividad_en_vivo.productos.Ensalada;
-import clase_22.actividad_en_vivo.productos.Gaseosa;
-import clase_22.actividad_en_vivo.productos.PapaFrita;
-
-import java.sql.SQLOutput;
+import clase_20_es_22.actividad_en_vivo.productos.Ensalada;
+import clase_20_es_22.actividad_en_vivo.productos.Gaseosa;
+import clase_20_es_22.actividad_en_vivo.productos.PapaFrita;
 
 public class DemoComposite {
     public static void main(String[] args) {

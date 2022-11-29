@@ -1,6 +1,6 @@
-package clase_22.actividad_en_vivo;
+package clase_20_es_22.actividad_en_vivo;
 
-import clase_22.actividad_en_vivo.productos.Producto;
+import clase_20_es_22.actividad_en_vivo.productos.Producto;
 
 import java.util.ArrayList;
 

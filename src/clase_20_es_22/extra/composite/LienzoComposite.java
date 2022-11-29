@@ -1,6 +1,6 @@
-package clase_22.extra.composite;
+package clase_20_es_22.extra.composite;
 
-import clase_22.extra.composite.componentes.Grafico;
+import clase_20_es_22.extra.composite.componentes.Grafico;
 
 import java.util.ArrayList;
 import java.util.Arrays;
