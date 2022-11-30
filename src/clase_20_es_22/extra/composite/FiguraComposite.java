@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Random;
 
-public class LienzoComposite implements Grafico {
+public class FiguraComposite implements Grafico {
 
     // Atributo privado
     private ArrayList<Grafico> graficos = new ArrayList();
@@ -31,11 +31,11 @@ public class LienzoComposite implements Grafico {
     public void colorear(String color) {
         System.out.println("\nEl lienzo contiene los siguientes gráficos coloreados:");
 
-        ArrayList<String> colores = new ArrayList(Arrays.asList("rojo", "verde", "azul", "negro"));
+        ArrayList<String> colores = new ArrayList(Arrays.asList("MARRON", "BLANCO", "VERDE", "NEGRO"));
         Random numeroAleatorio    = new Random();
 
         for (Grafico grafico : this.graficos) {
-            if (color == "RANDOM") {
+            if (color.toUpperCase() == "RANDOM") {
                 grafico.colorear(colores.get(numeroAleatorio.nextInt(0, 3)));
             } else {
                 grafico.colorear(color);

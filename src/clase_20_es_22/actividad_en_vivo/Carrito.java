@@ -28,12 +28,8 @@ public class Carrito {
         return totalDeLaCompra;
     }
 
-    // Getter & Setter
+    // Getter
     public ArrayList<Producto> getProductos() {
         return productos;
-    }
-
-    public void setProductos(ArrayList<Producto> productos) {
-        this.productos = productos;
     }
 }

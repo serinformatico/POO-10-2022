@@ -12,6 +12,12 @@ public class ComboComposite extends Producto {
     // Atributo de clase (estático)
     public static double porcentajeDeDescuento = 5.0;
 
+    // Constructor
+    public ComboComposite(String nombre) {
+        super(nombre, 0.0);
+    }
+
+
     // Métodos públicos
     public void agregarProducto(Producto producto) {
         this.productos.add(producto);
@@ -33,12 +39,8 @@ public class ComboComposite extends Producto {
         return preciototal;
     }
 
-    // Getter & Setter
+    // Getter
     public ArrayList<Producto> getProductos() {
         return productos;
-    }
-
-    public void setProductos(ArrayList<Producto> graficos) {
-        this.productos = graficos;
     }
 }
