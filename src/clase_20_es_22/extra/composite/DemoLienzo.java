@@ -14,7 +14,7 @@ public class DemoLienzo {
         linea1.graficar();
         linea1.colorear("RAMDON");
 
-        System.out.println("\nCirculo:");
+        System.out.println("\nclase_20_es_22.actividad_de_mesa.figuras.Circulo:");
         Circulo circulo = new Circulo();
         circulo.setRadio(15);
         circulo.graficar();

@@ -30,13 +30,13 @@ public class ComboComposite extends Producto {
 
     // Método público que cumple con la declaración abstracta en la superclase
     public double calcularPrecio() {
-        double preciototal = 0.0;
+        double precioTotal = 0.0;
 
         for (Producto producto : this.productos) {
-            preciototal += producto.calcularPrecio();
+            precioTotal += producto.calcularPrecio();
         }
 
-        return preciototal;
+        return precioTotal;
     }
 
     // Getter
